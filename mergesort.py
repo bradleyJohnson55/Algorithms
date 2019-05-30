@@ -1,4 +1,4 @@
-
+import random
 
 def mergesort(inp):
     n = len(inp)
@@ -26,6 +26,6 @@ def mergesort(inp):
         j += 1
     return output
 
-x = [1, 5,2,3,7,4]
+x = [random.randint(0, 100) for x in range(30)]
 print('x is ' + str(x))
 print('after sorting, x is ' + str(mergesort(x)))
